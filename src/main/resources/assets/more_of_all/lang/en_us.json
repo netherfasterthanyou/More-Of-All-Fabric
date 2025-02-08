@@ -1,0 +1,192 @@
+{
+  "item.more_of_all.thallium": "Thallium",
+  "item.more_of_all.terminite": "Terminite",
+  "item.more_of_all.raw_terminite": "Raw Terminite",
+  "item.more_of_all.nether_brick_chisel": "Nether Brick Chisel",
+  "item.more_of_all.chisel": "Stone Chisel",
+  "item.more_of_all.deepslate_chisel": "Deepslate Chisel",
+  "item.more_of_all.blackstone_chisel": "Blackstone Chisel",
+  "item.more_of_all.sand_chisel": "Sandstone Chisel",
+  "item.more_of_all.prismarine_chisel": "Prismarine Chisel",
+  "item.more_of_all.tuff_chisel": "Tuff Chisel",
+  "item.more_of_all.chainsaw": "Chainsaw",
+  "item.more_of_all.rayminer": "Instant Pickaxe",
+  "item.more_of_all.chili": "Chili",
+  "item.more_of_all.dormant_starlight": "Dormant Starlight",
+  "tooltip.more_of_all.chisel.tooltip": "Use on Stone blocks to see what happens hold right click to cycle blocks",
+  "tooltip.more_of_all.blackstone_chisel.tooltip": "Use on blackstone blocks to see what happens hold right click to cycle blocks",
+  "tooltip.more_of_all.sand_chisel.tooltip": "Use on Sand blocks to see what happens hold right click to cycle blocks",
+  "tooltip.more_of_all.prismarine_chisel.tooltip": "Use on prismarine blocks to see what happens hold right click to cycle blocks",
+  "tooltip.more_of_all.deepslate_chisel.tooltip": "Use on Deepslate blocks to see what happens hold right click to cycle blocks",
+  "tooltip.more_of_all.nether_brick_chisel.tooltip": "Use on Nether Brick blocks to see what happens hold right click to cycle blocks",
+  "tooltip.more_of_all.tuff_chisel.tooltip": "Use on Tuff blocks to see what happens hold right click to cycle blocks",
+  "tooltip.more_of_all.chainsaw.tooltip": "Right click on logs leaves and vines to instantly mine them",
+  "tooltip.more_of_all.rayminer.tooltip": "Right click on any type of stone to instantly mine them",
+
+  "block.more_of_all.thallium_stairs": "Thallium Stairs",
+  "block.more_of_all.thallium_slab": "Thallium Slab",
+  "block.more_of_all.thallium_button": "Thallium Button",
+  "block.more_of_all.thallium_pressure_plate": "Thallium Pressure Plate",
+  "block.more_of_all.thallium_fence": "Thallium Fence",
+  "block.more_of_all.thallium_fence_gate": "Thallium Fence Gate",
+  "block.more_of_all.thallium_wall": "Thallium Wall",
+  "block.more_of_all.thallium_door": "Thallium Door",
+  "block.more_of_all.thallium_trapdoor": "Thallium Trapdoor",
+
+  "itemgroup.more_of_all.more_of_all_tab": "More Of All",
+
+
+
+  "block.more_of_all.bloodwood_stairs": "Bloodwood Stairs",
+  "block.more_of_all.bloodwood_slab": "Bloodwood Slab",
+  "block.more_of_all.bloodwood_button": "Bloodwood Button",
+  "block.more_of_all.bloodwood_pressure_plate": "Bloodwood Pressure Plate",
+  "block.more_of_all.bloodwood_fence": "Bloodwood Fence",
+  "block.more_of_all.bloodwood_fence_gate": "Bloodwood Fence Gate",
+  "block.more_of_all.bloodwood_wall": "Bloodwood Wall",
+  "block.more_of_all.bloodwood_door": "Bloodwood Door",
+  "block.more_of_all.bloodwood_trapdoor": "Bloodwood Trapdoor",
+
+  "block.more_of_all.driftwood_stairs": "Driftwood Stairs",
+  "block.more_of_all.driftwood_slab": "Driftwood Slab",
+  "block.more_of_all.driftwood_button": "Driftwood Button",
+  "block.more_of_all.driftwood_pressure_plate": "Driftwood Pressure Plate",
+  "block.more_of_all.driftwood_fence": "Driftwood Fence",
+  "block.more_of_all.driftwood_fence_gate": "Driftwood Fence Gate",
+  "block.more_of_all.driftwood_wall": "Driftwood Wall",
+  "block.more_of_all.driftwood_door": "Driftwood Door",
+  "block.more_of_all.driftwood_trapdoor": "Driftwood Trapdoor",
+
+  "item.more_of_all.capybara_spawn_egg": "Capybara Spawn Egg",
+  "entity.more_of_all.capybara": "Capybara",
+  "item.more_of_all.throwing_axe": "Throwing Axe",
+  "entity.more_of_all.throwing_axe": "Throwing Axe",
+
+  "item.more_of_all.giraffe_spawn_egg": "Giraffe Spawn Egg",
+  "entity.more_of_all.giraffe": "Giraffe",
+  "item.more_of_all.penguin_spawn_egg": "Penguin Spawn Egg",
+  "entity.more_of_all.penguin": "Penguin",
+
+  "block.more_of_all.eucalyptus_stairs": "Eucalyptus Stairs",
+  "block.more_of_all.eucalyptus_slab": "Eucalyptus Slab",
+  "block.more_of_all.eucalyptus_button": "Eucalyptus Button",
+  "block.more_of_all.eucalyptus_pressure_plate": "Eucalyptus Pressure Plate",
+  "block.more_of_all.eucalyptus_fence": "Eucalyptus Fence",
+  "block.more_of_all.eucalyptus_fence_gate": "Eucalyptus Fence Gate",
+  "block.more_of_all.eucalyptus_wall": "Eucalyptus Wall",
+  "block.more_of_all.eucalyptus_door": "Eucalyptus Door",
+  "block.more_of_all.eucalyptus_trapdoor": "Eucalyptus Trapdoor",
+
+
+  "block.more_of_all.terminite_stairs": "Terminite Stairs",
+  "block.more_of_all.terminite_slab": "Terminite Slab",
+  "block.more_of_all.terminite_button": "Terminite Button",
+  "block.more_of_all.terminite_pressure_plate": "Terminite Pressure Plate",
+  "block.more_of_all.terminite_fence": "Terminite Fence",
+  "block.more_of_all.terminite_fence_gate": "Terminite Fence Gate",
+  "block.more_of_all.terminite_wall": "Terminite Wall",
+  "block.more_of_all.terminite_door": "Terminite Door",
+  "block.more_of_all.terminite_trapdoor": "Terminite Trapdoor",
+
+
+
+  "block.more_of_all.terminite_lamp": "Terminite Lamp",
+  "block.more_of_all.thallium_lamp": "Thallium Lamp",
+
+  "item.more_of_all.terminite_hoe": "Terminite Hoe",
+  "item.more_of_all.terminite_shovel": "Terminite Shovel",
+  "item.more_of_all.terminite_axe": "Terminite Axe",
+  "item.more_of_all.terminite_pickaxe": "Terminite Pickaxe",
+  "item.more_of_all.terminite_sword": "Terminite Sword",
+
+  "item.more_of_all.thallium_hoe": "Thallium Hoe",
+  "item.more_of_all.thallium_shovel": "Thallium Shovel",
+  "item.more_of_all.thallium_axe": "Thallium Axe",
+  "item.more_of_all.thallium_pickaxe": "Thallium Pickaxe",
+  "item.more_of_all.thallium_sword": "Thallium Sword",
+  "item.more_of_all.hammer": "Hammer",
+  "effect.more_of_all.slimey": "Sticky",
+
+
+  "enchantment.more_of_all.thundering": "Call of Zeus",
+  "enchantment.more_of_all.tnt_explode_effect": "TNT Shot",
+  "enchantment.more_of_all.life_steal": "Life Steal",
+  "enchantment.more_of_all.fireball": "Fireball",
+
+
+  "item.minecraft.potion.effect.slimey_potion": "Sticky Potion",
+  "item.minecraft.splash_potion.effect.slimey_potion": "Sticky Splash Potion",
+  "item.minecraft.lingering_potion.effect.slimey_potion": "Sticky Lingering Potion",
+  "item.minecraft.tipped_arrow.effect.slimey_potion": "Sticky Arrow",
+
+  "block.more_of_all.eucalyptus_log": "Eucalyptus Log",
+  "block.more_of_all.eucalyptus_leaves": "Eucalyptus Leaves",
+  "block.more_of_all.eucalyptus_planks": "Eucalyptus Planks",
+  "block.more_of_all.eucalyptus_wood": "Eucalyptus Wood",
+  "block.more_of_all.stripped_eucalyptus_wood": "Stripped Eucalyptus Wood",
+  "block.more_of_all.stripped_eucalyptus_log": "Stripped Eucalyptus Log",
+  "block.more_of_all.eucalyptus_sapling": "Eucalyptus Sapling",
+
+  "block.more_of_all.bloodwood_log": "Bloodwood Log",
+  "block.more_of_all.bloodwood_leaves": "Bloodwood Leaves",
+  "block.more_of_all.bloodwood_planks": "Bloodwood Planks",
+  "block.more_of_all.bloodwood_wood": "Bloodwood Wood",
+  "block.more_of_all.stripped_bloodwood_wood": "Stripped Bloodwood Wood",
+  "block.more_of_all.stripped_bloodwood_log": "Stripped Bloodwood Log",
+  "block.more_of_all.bloodwood_sapling": "Bloodwood Sapling",
+
+  "block.more_of_all.driftwood_log": "Driftwood Log",
+  "block.more_of_all.driftwood_leaves": "Driftwood Leaves",
+  "block.more_of_all.driftwood_planks": "Driftwood Planks",
+  "block.more_of_all.driftwood_wood": "Driftwood Wood",
+  "block.more_of_all.stripped_driftwood_wood": "Stripped Driftwood Wood",
+  "block.more_of_all.stripped_driftwood_log": "Stripped Driftwood Log",
+  "block.more_of_all.driftwood_sapling": "Driftwood Sapling",
+
+
+
+  "item.more_of_all.thallium_helmet": "Thallium Helmet",
+  "item.more_of_all.thallium_chestplate": "Thallium Chestplate",
+  "item.more_of_all.thallium_leggings": "Thallium Leggings",
+  "item.more_of_all.thallium_boots": "Thallium Boots",
+  "item.more_of_all.track_armor_trim_smithing_template": "Smithing Template",
+
+  "item.more_of_all.chili_seeds": "Chili Seeds",
+  "block.more_of_all.chili_crop": "Chili Crop",
+  "item.more_of_all.blueberries": "Blueberries",
+  "block.more_of_all.blueberry_bush": "Blueberry Bush",
+
+
+  "item.more_of_all.terminite_helmet": "Terminite Helmet",
+  "item.more_of_all.terminite_chestplate": "Terminite Chestplate",
+  "item.more_of_all.terminite_leggings": "Terminite Leggings",
+  "item.more_of_all.terminite_boots": "Terminite Boots",
+  "item.more_of_all.terminite_bow": "Terminite Bow",
+  "item.more_of_all.thallium_bow": "Thallium Bow",
+
+
+  "item.more_of_all.terminite_horse_armor": "Terminite Horse Armor",
+  "item.more_of_all.thallium_horse_armor": "Thallium Horse Armor",
+
+
+
+
+
+
+
+
+  "tooltip.more_of_all.salvager.tooltip": "Salvage your tools and armor by throwing them on this block",
+  "block.more_of_all.salvager": "Salvager",
+  "block.more_of_all.thallium_block": "Block of Thallium",
+  "block.more_of_all.terminite_block": "Block of Terminite",
+  "block.more_of_all.raw_terminite_block": "Block of Raw Terminite",
+  "block.more_of_all.thallium_ore": "Thallium Ore",
+  "block.more_of_all.terminite_ore": "Terminite Ore",
+  "block.more_of_all.deepslate_terminite_ore": "Deepslate Terminite Ore",
+  "block.more_of_all.deepslate_thallium_ore": "Deepslate Thallium Ore",
+
+
+  "trim_pattern.more_of_all.track": "Track Armor Trim",
+  "trim_material.more_of_all.terminite": "Terminite Material",
+  "trim_material.more_of_all.thallium": "Terminite Material"
+}

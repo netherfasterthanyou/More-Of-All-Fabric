@@ -3,15 +3,15 @@
 	"id": "more_of_all",
 	"version": "${version}",
 	"name": "More Of All",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "A mod that attempts to add quite literally more of all!",
 	"authors": [
-		"Me!"
+		"Enderbot_12231!"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
-	"license": "CC0-1.0",
+	"license": "GNU GPL V3",
 	"icon": "assets/more_of_all/icon.png",
 	"environment": "*",
 	"entrypoints": {
@@ -20,6 +20,9 @@
 		],
 		"fabric-datagen": [
 			"com.more_of_all.MoreOfAllDataGenerator"
+		],
+		"client": [
+			"com.more_of_all.MoreOfAllClient"
 		]
 	},
 	"mixins": [
