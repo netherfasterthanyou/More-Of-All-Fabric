@@ -24,7 +24,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.DEEPSLATE_TERMINITE_ORE)
                 .add(ModBlocks.TERMINITE_ORE)
                 .add(ModBlocks.THALLIUM_ORE)
-                .add(ModBlocks.DEEPSLATE_THALLIUM_ORE);
+                .add(ModBlocks.DEEPSLATE_THALLIUM_ORE)
+                .add(ModBlocks.MOA_GILDED_BLACKSTONE);
 
 
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
@@ -33,5 +34,17 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.THALLIUM_ORE)
                 .add(ModBlocks.DEEPSLATE_THALLIUM_ORE);
 
+
+        getOrCreateTagBuilder(BlockTags.FENCES)
+                .add(ModBlocks.TERMINITE_FENCE)
+                .add(ModBlocks.THALLIUM_FENCE);
+
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES)
+                .add(ModBlocks.TERMINITE_FENCE_GATE)
+                .add(ModBlocks.THALLIUM_FENCE_GATE);
+
+        getOrCreateTagBuilder(BlockTags.WALLS)
+                .add(ModBlocks.TERMINITE_WALL)
+                .add(ModBlocks.THALLIUM_WALL);
     }
 }

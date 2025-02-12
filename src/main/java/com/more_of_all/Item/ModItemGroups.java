@@ -35,6 +35,31 @@ public class ModItemGroups {
                         entries.add(ModBlocks.DEEPSLATE_TERMINITE_ORE);
                         entries.add(ModBlocks.TERMINITE_ORE);
                         entries.add(ModBlocks.THALLIUM_ORE);
+                        entries.add(ModItems.CHILI);
+                        entries.add(ModItems.DORMANT_STARLIGHT);
+
+
+                        entries.add(ModBlocks.THALLIUM_SLAB);
+                        entries.add(ModBlocks.THALLIUM_STAIRS);
+                        entries.add(ModBlocks.THALLIUM_BUTTON);
+                        entries.add(ModBlocks.THALLIUM_PRESSURE_PLATE);
+                        entries.add(ModBlocks.THALLIUM_FENCE);
+                        entries.add(ModBlocks.THALLIUM_FENCE_GATE);
+                        entries.add(ModBlocks.THALLIUM_WALL);
+                        entries.add(ModBlocks.THALLIUM_DOOR);
+                        entries.add(ModBlocks.THALLIUM_TRAPDOOR);
+
+
+
+                        entries.add(ModBlocks.TERMINITE_SLAB);
+                        entries.add(ModBlocks.TERMINITE_STAIRS);
+                        entries.add(ModBlocks.TERMINITE_BUTTON);
+                        entries.add(ModBlocks.TERMINITE_PRESSURE_PLATE);
+                        entries.add(ModBlocks.TERMINITE_FENCE);
+                        entries.add(ModBlocks.TERMINITE_FENCE_GATE);
+                        entries.add(ModBlocks.TERMINITE_WALL);
+                        entries.add(ModBlocks.TERMINITE_DOOR);
+                        entries.add(ModBlocks.TERMINITE_TRAPDOOR);
                     })
 
 

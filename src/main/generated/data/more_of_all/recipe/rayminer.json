@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "T": {
+      "item": "minecraft:nether_star"
+    }
+  },
+  "pattern": [
+    "TTT",
+    " F ",
+    " F "
+  ],
+  "result": {
+    "count": 1,
+    "id": "more_of_all:rayminer"
+  }
+}

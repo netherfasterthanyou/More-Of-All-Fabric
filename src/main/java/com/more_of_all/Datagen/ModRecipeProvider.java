@@ -2,15 +2,19 @@ package com.more_of_all.Datagen;
 
 import com.more_of_all.Block.ModBlocks;
 import com.more_of_all.Item.ModItems;
+import com.more_of_all.MoreOfAll;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 
+import net.minecraft.block.Block;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemConvertible;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
+import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.util.Identifier;
@@ -24,7 +28,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     }
 
 
-
     @Override
     public void generate(RecipeExporter exporter) {
         List<ItemConvertible> THALLIUM_SMELTABLES = List.of(ModBlocks.THALLIUM_ORE,
@@ -33,7 +36,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerSmelting(exporter, THALLIUM_SMELTABLES, RecipeCategory.MISC, ModItems.THALLIUM, 0.25f, 200, "thallium");
         offerBlasting(exporter, THALLIUM_SMELTABLES, RecipeCategory.MISC, ModItems.THALLIUM, 0.25f, 100, "thallium");
 
-        List<ItemConvertible> TERMINITE_SMELTABLES = List.of(ModItems.TERMINITE, ModBlocks.TERMINITE_ORE,
+        List<ItemConvertible> TERMINITE_SMELTABLES = List.of(ModItems.RAW_TERMINITE, ModBlocks.TERMINITE_ORE,
                 ModBlocks.DEEPSLATE_TERMINITE_ORE);
 
         offerSmelting(exporter, TERMINITE_SMELTABLES, RecipeCategory.MISC, ModItems.TERMINITE, 0.25f, 200, "terminite");
@@ -46,6 +49,25 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern("RRR")
                 .input('R', ModItems.RAW_TERMINITE)
                 .criterion(hasItem(ModItems.RAW_TERMINITE), conditionsFromItem(ModItems.RAW_TERMINITE))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RAYMINER)
+                .pattern("TTT")
+                .pattern(" F ")
+                .pattern(" F ")
+                .input('T', Items.NETHER_STAR)
+                .input('F', Items.NETHERITE_INGOT)
+                .criterion(hasItem(Items.NETHER_STAR), conditionsFromItem(Items.NETHER_STAR))
+                .offerTo(exporter);
+
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.DORMANT_STARLIGHT)
+                .pattern("XAX")
+                .pattern("AAA")
+                .pattern("XAX")
+                .input('A', ModItems.THALLIUM)
+                .input('X', Items.COAL_BLOCK)
+                .criterion(hasItem(Items.COAL), conditionsFromItem(Items.COAL))
                 .offerTo(exporter);
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RAW_TERMINITE, 9)
@@ -90,8 +112,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('X', Items.IRON_INGOT)
                 .input('A', Items.COBBLESTONE)
                 .input('S', Items.STICK)
-                        .criterion(hasItem(Items.COBBLESTONE), conditionsFromItem(Items.COBBLESTONE))
-                                .offerTo(exporter);
+                .criterion(hasItem(Items.COBBLESTONE), conditionsFromItem(Items.COBBLESTONE))
+                .offerTo(exporter);
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.DEEPSLATECHISEL)
                 .pattern("SA ")
                 .pattern("AX ")
@@ -147,6 +169,62 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.TUFF), conditionsFromItem(Items.TUFF))
                 .offerTo(exporter);
 
+        createStairsRecipe(ModBlocks.TERMINITE_STAIRS, Ingredient.ofItems(ModItems.TERMINITE))
+                .criterion(hasItem(ModItems.TERMINITE), conditionsFromItem(ModItems.TERMINITE)).offerTo(exporter);
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.TERMINITE_SLAB, Ingredient.ofItems(ModItems.TERMINITE))
+                .criterion(hasItem(ModItems.TERMINITE), conditionsFromItem(ModItems.TERMINITE)).offerTo(exporter);
+        createPressurePlateRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.TERMINITE_PRESSURE_PLATE,
+                Ingredient.ofItems(ModItems.TERMINITE))
+                .criterion(hasItem(ModItems.TERMINITE), conditionsFromItem(ModItems.TERMINITE)).offerTo(exporter);
+        createFenceRecipe(ModBlocks.TERMINITE_FENCE, Ingredient.ofItems(ModItems.TERMINITE))
+                .criterion(hasItem(ModItems.TERMINITE), conditionsFromItem(ModItems.TERMINITE)).offerTo(exporter);
+        createFenceGateRecipe(ModBlocks.TERMINITE_FENCE_GATE, Ingredient.ofItems(ModItems.TERMINITE))
+                .criterion(hasItem(ModItems.TERMINITE), conditionsFromItem(ModItems.TERMINITE)).offerTo(exporter);
+
+        createDoorRecipe(ModBlocks.TERMINITE_DOOR, Ingredient.ofItems(ModItems.TERMINITE))
+                .criterion(hasItem(ModItems.TERMINITE), conditionsFromItem(ModItems.TERMINITE)).offerTo(exporter);
+        createTrapdoorRecipe(ModBlocks.TERMINITE_TRAPDOOR, Ingredient.ofItems(ModItems.TERMINITE))
+                .criterion(hasItem(ModItems.TERMINITE), conditionsFromItem(ModItems.TERMINITE)).offerTo(exporter);
+
+        createStairsRecipe(ModBlocks.THALLIUM_STAIRS, Ingredient.ofItems(ModItems.THALLIUM))
+                .criterion(hasItem(ModItems.THALLIUM), conditionsFromItem(ModItems.THALLIUM)).offerTo(exporter);
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.THALLIUM_SLAB, Ingredient.ofItems(ModItems.THALLIUM))
+                .criterion(hasItem(ModItems.THALLIUM), conditionsFromItem(ModItems.THALLIUM)).offerTo(exporter);
+        createPressurePlateRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.THALLIUM_PRESSURE_PLATE,
+                Ingredient.ofItems(ModItems.THALLIUM))
+                .criterion(hasItem(ModItems.THALLIUM), conditionsFromItem(ModItems.THALLIUM)).offerTo(exporter);
+        createFenceRecipe(ModBlocks.THALLIUM_FENCE, Ingredient.ofItems(ModItems.THALLIUM))
+                .criterion(hasItem(ModItems.THALLIUM), conditionsFromItem(ModItems.THALLIUM)).offerTo(exporter);
+        createFenceGateRecipe(ModBlocks.THALLIUM_FENCE_GATE, Ingredient.ofItems(ModItems.THALLIUM))
+                .criterion(hasItem(ModItems.THALLIUM), conditionsFromItem(ModItems.THALLIUM)).offerTo(exporter);
+
+        createDoorRecipe(ModBlocks.THALLIUM_DOOR, Ingredient.ofItems(ModItems.THALLIUM))
+                .criterion(hasItem(ModItems.THALLIUM), conditionsFromItem(ModItems.THALLIUM)).offerTo(exporter);
+        createTrapdoorRecipe(ModBlocks.THALLIUM_TRAPDOOR, Ingredient.ofItems(ModItems.THALLIUM))
+                .criterion(hasItem(ModItems.THALLIUM), conditionsFromItem(ModItems.THALLIUM)).offerTo(exporter);
+
+        offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.THALLIUM_WALL, ModItems.THALLIUM);
+        offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.TERMINITE_WALL, ModItems.TERMINITE);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModBlocks.TERMINITE_BUTTON)
+                .pattern("   ")
+                .pattern(" X ")
+                .pattern("   ")
+                .input('X', ModItems.TERMINITE)
+
+                .criterion(hasItem(ModItems.TERMINITE), conditionsFromItem(ModItems.TERMINITE))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModBlocks.THALLIUM_BUTTON)
+                .pattern("   ")
+                .pattern(" X ")
+                .pattern("   ")
+                .input('X', ModItems.THALLIUM)
+
+                .criterion(hasItem(ModItems.THALLIUM), conditionsFromItem(ModItems.THALLIUM))
+                .offerTo(exporter);
+
+
 
 
 
@@ -155,5 +233,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModBlocks.THALLIUM_BLOCK),
                         conditionsFromItem(ModBlocks.THALLIUM_BLOCK))
                 .offerTo(exporter);
+
+
     }
+
+
+
+
+
 }

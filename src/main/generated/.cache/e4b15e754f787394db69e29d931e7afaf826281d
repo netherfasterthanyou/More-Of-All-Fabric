@@ -1,3 +1,6 @@
-// 1.21.1	2025-02-07T17:43:48.9312177	More Of All/Tags for minecraft:block
+// 1.21.1	2025-02-10T08:07:50.6239047	More Of All/Tags for minecraft:block
+5b2c27413b53d1bcb5dcd91bfc8b2b7dc7d3e204 data\minecraft\tags\block\fence_gates.json
 dd3866c80bfb30ca5b9a78d92fcc47a5c54ceaad data\minecraft\tags\block\needs_stone_tool.json
-765a1efd2bd634249f1f8cef9babcefc18fee53b data\minecraft\tags\block\mineable\pickaxe.json
+14c090ed00d25d3cf76fe1f0bde92be8ca7e1d7a data\minecraft\tags\block\walls.json
+f841cd241024b8ac8a4e82da65cc2b4b62d37940 data\minecraft\tags\block\mineable\pickaxe.json
+be598b0a5dd89c09a464311136fcf5d48a3e824b data\minecraft\tags\block\fences.json

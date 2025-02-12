@@ -2,8 +2,10 @@ package com.more_of_all.Item;
 
 import com.more_of_all.Item.Custom.ChainsawItem;
 import com.more_of_all.Item.Custom.Chisel.*;
+import com.more_of_all.Item.Custom.RayMinerItem;
 import com.more_of_all.MoreOfAll;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.component.type.FoodComponent;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
@@ -22,6 +24,9 @@ public class ModItems {
     public static final Item SAND_CHISEL = registerItem("sand_chisel", new SandChiselItem(new Item.Settings()));
     public static final Item TUFF_CHISEL = registerItem("tuff_chisel", new TuffChiselItem(new Item.Settings()));
     public static final Item CHAINSAW = registerItem("chainsaw", new ChainsawItem(new Item.Settings().maxDamage(296)));
+    public static final Item RAYMINER = registerItem("rayminer", new RayMinerItem(new Item.Settings().maxDamage(10000)));
+    public static final Item CHILI = registerItem("chili", new Item(new Item.Settings().food(ModFood.CHILI)));
+    public static final Item DORMANT_STARLIGHT = registerItem("dormant_starlight", new Item(new Item.Settings()));
 
     private static Item registerItem(String name, Item item){
 
@@ -34,11 +39,7 @@ public class ModItems {
         MoreOfAll.LOGGER.info("Registering Mod Items for " + MoreOfAll.MOD_ID);
 
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
-            entries.add(TERMINITE);
-            entries.add(RAW_TERMINITE);
-            entries.add(THALLIUM);
-        });
+
 
     }
 }
