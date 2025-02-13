@@ -37,7 +37,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.THALLIUM_ORE);
                         entries.add(ModItems.CHILI);
                         entries.add(ModItems.DORMANT_STARLIGHT);
-
+                        entries.add(ModBlocks.TERMINITE_LAMP);
+                        entries.add(ModBlocks.THALLIUM_LAMP);
 
                         entries.add(ModBlocks.THALLIUM_SLAB);
                         entries.add(ModBlocks.THALLIUM_STAIRS);
@@ -48,6 +49,18 @@ public class ModItemGroups {
                         entries.add(ModBlocks.THALLIUM_WALL);
                         entries.add(ModBlocks.THALLIUM_DOOR);
                         entries.add(ModBlocks.THALLIUM_TRAPDOOR);
+
+                        entries.add(ModItems.TERMINITE_SWORD);
+                        entries.add(ModItems.TERMINITE_AXE);
+                        entries.add(ModItems.TERMINITE_PICKAXE);
+                        entries.add(ModItems.TERMINITE_SHOVEL);
+                        entries.add(ModItems.TERMINITE_HOE);
+                        entries.add(ModItems.THALLIUM_SWORD);
+                        entries.add(ModItems.THALLIUM_AXE);
+                        entries.add(ModItems.THALLIUM_PICKAXE);
+                        entries.add(ModItems.THALLIUM_SHOVEL);
+                        entries.add(ModItems.THALLIUM_HOE);
+                        entries.add(ModItems.HAMMER);
 
 
 

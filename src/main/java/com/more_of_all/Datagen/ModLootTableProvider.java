@@ -56,6 +56,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.THALLIUM_TRAPDOOR);
         addDrop(ModBlocks.THALLIUM_SLAB, slabDrops(ModBlocks.THALLIUM_SLAB));
         addDrop(ModBlocks.THALLIUM_DOOR, doorDrops(ModBlocks.THALLIUM_DOOR));
+        addDrop(ModBlocks.THALLIUM_LAMP);
+        addDrop(ModBlocks.TERMINITE_LAMP);
 
 
 

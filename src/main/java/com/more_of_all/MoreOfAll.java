@@ -3,8 +3,10 @@ package com.more_of_all;
 import com.more_of_all.Block.ModBlocks;
 import com.more_of_all.Item.ModItemGroups;
 import com.more_of_all.Item.ModItems;
+import com.more_of_all.event.HammerUsageEvent;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -21,5 +23,6 @@ public class MoreOfAll implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 
 		FuelRegistry.INSTANCE.add(ModItems.DORMANT_STARLIGHT, 64390);
+		PlayerBlockBreakEvents.BEFORE.register(new HammerUsageEvent());
 	}
 }

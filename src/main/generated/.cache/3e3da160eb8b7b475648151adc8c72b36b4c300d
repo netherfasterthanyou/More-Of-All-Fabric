@@ -1,1 +1,11 @@
-// 1.21.1	2025-02-10T08:07:50.6249026	More Of All/Tags for minecraft:item
+// 1.21.1	2025-02-12T18:20:41.6456139	More Of All/Tags for minecraft:item
+c28967f57eb02ef0082d3b6f87bdcb740fe05806 data\minecraft\tags\item\enchantable\mining_loot.json
+6845c5abcea28652fae9a20cba8124e7d4c8c0bf data\minecraft\tags\item\hoes.json
+42d2c93d83ba6171e529ebf61370f243069a1c6b data\minecraft\tags\item\swords.json
+af2a9b033618f4bbc6f76af11bbcfc711a1afc6f data\minecraft\tags\item\shovels.json
+b30149290b9f24af863358111ceb0a0aa20d77cb data\minecraft\tags\item\enchantable\sharp_weapon.json
+dffe38148f8473b6a0bc6ab2d7fb2cd4a943ea0c data\minecraft\tags\item\enchantable\durability.json
+e4f99b5346c29dcfb0c23d3fd8d0d754d08b89eb data\minecraft\tags\item\pickaxes.json
+c28967f57eb02ef0082d3b6f87bdcb740fe05806 data\minecraft\tags\item\enchantable\mining.json
+ec5c6c0ae5ce6af8473a670d5494e7be70edb5d4 data\minecraft\tags\item\enchantable\sword.json
+8a7f8e3d56e9c4abc2fff5ff5d246ee3c42fe578 data\minecraft\tags\item\axes.json

@@ -206,7 +206,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.THALLIUM_WALL, ModItems.THALLIUM);
         offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.TERMINITE_WALL, ModItems.TERMINITE);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModBlocks.TERMINITE_BUTTON)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.TERMINITE_BUTTON)
                 .pattern("   ")
                 .pattern(" X ")
                 .pattern("   ")
@@ -215,7 +215,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.TERMINITE), conditionsFromItem(ModItems.TERMINITE))
                 .offerTo(exporter);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModBlocks.THALLIUM_BUTTON)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.THALLIUM_BUTTON)
                 .pattern("   ")
                 .pattern(" X ")
                 .pattern("   ")
@@ -224,6 +224,136 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.THALLIUM), conditionsFromItem(ModItems.THALLIUM))
                 .offerTo(exporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.THALLIUM_LAMP)
+                .pattern("   ")
+                .pattern("CX ")
+                .pattern("   ")
+                .input('X', ModItems.THALLIUM)
+                .input('C', Items.GLOWSTONE)
+
+                .criterion(hasItem(ModItems.THALLIUM), conditionsFromItem(ModItems.THALLIUM))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.TERMINITE_LAMP)
+                .pattern("   ")
+                .pattern("CX ")
+                .pattern("   ")
+                .input('X', ModItems.TERMINITE)
+                .input('C', Items.GLOWSTONE)
+
+                .criterion(hasItem(ModItems.TERMINITE), conditionsFromItem(ModItems.TERMINITE))
+                .offerTo(exporter);
+
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.TERMINITE_SWORD)
+                .pattern(" X ")
+                .pattern(" X ")
+                .pattern(" C ")
+                .input('X', ModItems.TERMINITE)
+                .input('C', Items.STICK)
+
+                .criterion(hasItem(ModItems.TERMINITE), conditionsFromItem(ModItems.TERMINITE))
+                .offerTo(exporter);
+
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.TERMINITE_AXE)
+                .pattern("XX ")
+                .pattern("XC ")
+                .pattern(" C ")
+                .input('X', ModItems.TERMINITE)
+                .input('C', Items.STICK)
+
+                .criterion(hasItem(ModItems.TERMINITE), conditionsFromItem(ModItems.TERMINITE))
+                .offerTo(exporter);
+
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.TERMINITE_PICKAXE)
+                .pattern("XXX")
+                .pattern(" C ")
+                .pattern(" C ")
+                .input('X', ModItems.TERMINITE)
+                .input('C', Items.STICK)
+
+                .criterion(hasItem(ModItems.TERMINITE), conditionsFromItem(ModItems.TERMINITE))
+                .offerTo(exporter);
+
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.TERMINITE_SHOVEL)
+                .pattern(" X ")
+                .pattern(" C ")
+                .pattern(" C ")
+                .input('X', ModItems.TERMINITE)
+                .input('C', Items.STICK)
+
+                .criterion(hasItem(ModItems.TERMINITE), conditionsFromItem(ModItems.TERMINITE))
+                .offerTo(exporter);
+
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.TERMINITE_HOE)
+                .pattern("XX ")
+                .pattern(" C ")
+                .pattern(" C ")
+                .input('X', ModItems.TERMINITE)
+                .input('C', Items.STICK)
+
+                .criterion(hasItem(ModItems.TERMINITE), conditionsFromItem(ModItems.TERMINITE))
+                .offerTo(exporter);
+
+
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.THALLIUM_SWORD)
+                .pattern(" X ")
+                .pattern(" X ")
+                .pattern(" C ")
+                .input('X', ModItems.THALLIUM)
+                .input('C', Items.STICK)
+
+                .criterion(hasItem(ModItems.THALLIUM), conditionsFromItem(ModItems.THALLIUM))
+                .offerTo(exporter);
+
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.THALLIUM_AXE)
+                .pattern("XX ")
+                .pattern("XC ")
+                .pattern(" C ")
+                .input('X', ModItems.THALLIUM)
+                .input('C', Items.STICK)
+
+                .criterion(hasItem(ModItems.THALLIUM), conditionsFromItem(ModItems.THALLIUM))
+                .offerTo(exporter);
+
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.THALLIUM_PICKAXE)
+                .pattern("XXX")
+                .pattern(" C ")
+                .pattern(" C ")
+                .input('X', ModItems.THALLIUM)
+                .input('C', Items.STICK)
+
+                .criterion(hasItem(ModItems.THALLIUM), conditionsFromItem(ModItems.THALLIUM))
+                .offerTo(exporter);
+
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.THALLIUM_SHOVEL)
+                .pattern(" X ")
+                .pattern(" C ")
+                .pattern(" C ")
+                .input('X', ModItems.THALLIUM)
+                .input('C', Items.STICK)
+
+                .criterion(hasItem(ModItems.THALLIUM), conditionsFromItem(ModItems.THALLIUM))
+                .offerTo(exporter);
+
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.THALLIUM_HOE)
+                .pattern("XX ")
+                .pattern(" C ")
+                .pattern(" C ")
+                .input('X', ModItems.THALLIUM)
+                .input('C', Items.STICK)
+
+                .criterion(hasItem(ModItems.THALLIUM), conditionsFromItem(ModItems.THALLIUM))
+                .offerTo(exporter);
 
 
 

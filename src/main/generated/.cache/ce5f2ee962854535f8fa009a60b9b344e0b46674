@@ -1,10 +1,12 @@
-// 1.21.1	2025-02-10T08:07:50.6249026	More Of All/Block Loot Tables
+// 1.21.1	2025-02-12T18:20:41.6456139	More Of All/Block Loot Tables
 a6d8bc82b3cb4df47c26e18811cc9f10d36cec92 data\more_of_all\loot_table\blocks\thallium_stairs.json
 5dbf3934b0047b77893ba48835fa95b46e096044 data\more_of_all\loot_table\blocks\thallium_trapdoor.json
+6fbd3eae6d733a79284385c20969c9e5bea1da35 data\more_of_all\loot_table\blocks\terminite_lamp.json
 0c89a1eab4fae1577a754a4afbaca5099a0f831b data\more_of_all\loot_table\blocks\thallium_door.json
 101815495789b27df71f45a03a6b85d4e865f3e4 data\more_of_all\loot_table\blocks\terminite_door.json
 f786d0838ed5f9e3f76ad2aec39df13756180c02 data\more_of_all\loot_table\blocks\terminite_stairs.json
 0836f1bfaea9a1d34b9946ae6b7cd0e6bdd375a9 data\more_of_all\loot_table\blocks\thallium_fence.json
+613c74eb1d7ab0a24737a52ac8ed0eec4634626d data\more_of_all\loot_table\blocks\thallium_lamp.json
 36335aacf98570e5e1f4f1edf137f536ff91260d data\more_of_all\loot_table\blocks\thallium_slab.json
 8efe323bae4a078be90130dff99d24b425e22984 data\more_of_all\loot_table\blocks\thallium_ore.json
 a42f36d13f9d9717ef1db4b50011c635267fb82f data\more_of_all\loot_table\blocks\thallium_button.json

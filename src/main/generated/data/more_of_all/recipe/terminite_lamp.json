@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "C": {
+      "item": "minecraft:glowstone"
+    },
+    "X": {
+      "item": "more_of_all:terminite"
+    }
+  },
+  "pattern": [
+    "   ",
+    "CX ",
+    "   "
+  ],
+  "result": {
+    "count": 1,
+    "id": "more_of_all:terminite_lamp"
+  }
+}

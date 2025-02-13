@@ -1,9 +1,11 @@
 package com.more_of_all.Datagen;
 
 import com.more_of_all.Block.ModBlocks;
+import com.more_of_all.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 
+import net.minecraft.block.Blocks;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
 
@@ -25,7 +27,14 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.TERMINITE_ORE)
                 .add(ModBlocks.THALLIUM_ORE)
                 .add(ModBlocks.DEEPSLATE_THALLIUM_ORE)
-                .add(ModBlocks.MOA_GILDED_BLACKSTONE);
+                .add(ModBlocks.MOA_GILDED_BLACKSTONE)
+                .add(ModBlocks.TERMINITE_LAMP)
+                .add(ModBlocks.THALLIUM_LAMP);
+
+
+
+
+
 
 
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)

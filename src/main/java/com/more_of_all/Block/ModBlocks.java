@@ -1,5 +1,6 @@
 package com.more_of_all.Block;
 
+import com.more_of_all.Block.custom.LampBlock;
 import com.more_of_all.Block.custom.SalvagerBlock;
 import com.more_of_all.MoreOfAll;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -25,6 +26,14 @@ public class ModBlocks {
                     .requiresTool().sounds(BlockSoundGroup.NETHERITE)));
     public static final Block SALVAGER = registerBlock("salvager",
             new SalvagerBlock(AbstractBlock.Settings.create().strength(5f)));
+
+    public static final Block TERMINITE_LAMP = registerBlock("terminite_lamp",
+            new LampBlock(AbstractBlock.Settings.create()
+                    .strength(2f).requiresTool().luminance(state -> state.get(LampBlock.CLICKED) ? 15 : 0)));
+
+    public static final Block THALLIUM_LAMP = registerBlock("thallium_lamp",
+            new LampBlock(AbstractBlock.Settings.create()
+                    .strength(2f).requiresTool().luminance(state -> state.get(LampBlock.CLICKED) ? 15 : 0)));
 
     public static final Block THALLIUM_ORE = registerBlock("thallium_ore",
             new Block(AbstractBlock.Settings.create().strength(4f)
