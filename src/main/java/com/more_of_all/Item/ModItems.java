@@ -3,6 +3,7 @@ package com.more_of_all.Item;
 import com.more_of_all.Item.Custom.ChainsawItem;
 import com.more_of_all.Item.Custom.Chisel.*;
 import com.more_of_all.Item.Custom.HammerItem;
+import com.more_of_all.Item.Custom.ModArmorItem;
 import com.more_of_all.Item.Custom.RayMinerItem;
 import com.more_of_all.MoreOfAll;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -10,6 +11,8 @@ import net.minecraft.component.type.FoodComponent;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.resource.featuretoggle.FeatureFlag;
+import net.minecraft.resource.featuretoggle.FeatureFlags;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
@@ -73,7 +76,41 @@ public class ModItems {
             new HammerItem(ModToolMaterials.TERMINITE, new Item.Settings()
                     .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.TERMINITE, 7, -3.5f))));
 
+    public static final Item TERMINITE_HELMET =registerItem("terminite_helmet",
+            new ArmorItem(ModArmorMaterials.TERMINITE_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(27))));
+    public static final Item TERMINITE_CHESTPLATE =registerItem("terminite_chestplate",
+            new ArmorItem(ModArmorMaterials.TERMINITE_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(27))));
+    public static final Item TERMINITE_LEGGINGS =registerItem("terminite_leggings",
+            new ArmorItem(ModArmorMaterials.TERMINITE_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(27))));
 
+    public static final Item TERMINITE_BOOTS =registerItem("terminite_boots",
+            new ModArmorItem(ModArmorMaterials.TERMINITE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(27))));
+
+    public static final Item THALLIUM_HELMET =registerItem("thallium_helmet",
+            new ArmorItem(ModArmorMaterials.THALLIUM_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(25))));
+    public static final Item THALLIUM_CHESTPLATE =registerItem("thallium_chestplate",
+            new ArmorItem(ModArmorMaterials.THALLIUM_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(25))));
+    public static final Item THALLIUM_LEGGINGS =registerItem("thallium_leggings",
+            new ArmorItem(ModArmorMaterials.THALLIUM_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(25))));
+
+    public static final Item THALLIUM_BOOTS =registerItem("thallium_boots",
+            new ModArmorItem(ModArmorMaterials.THALLIUM_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(25))));
+    public static final Item TERMINITE_HORSE_ARMOR = registerItem("terminite_horse_armor",
+            new AnimalArmorItem(ModArmorMaterials.TERMINITE_ARMOR_MATERIAL, AnimalArmorItem.Type.EQUESTRIAN, false, new Item.Settings().maxCount(1)));
+
+    public static final Item THALLIUM_HORSE_ARMOR = registerItem("thallium_horse_armor",
+            new AnimalArmorItem(ModArmorMaterials.THALLIUM_ARMOR_MATERIAL, AnimalArmorItem.Type.EQUESTRIAN, false, new Item.Settings().maxCount(1)));
+
+    public static final Item TRACK_SMITHING_TEMPLATE = registerItem("track_armor_trim_smithing_template",
+            SmithingTemplateItem.of(Identifier.of(MoreOfAll.MOD_ID, "track"), FeatureFlags.VANILLA));
 
     private static Item registerItem(String name, Item item){
 

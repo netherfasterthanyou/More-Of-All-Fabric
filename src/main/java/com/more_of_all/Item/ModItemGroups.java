@@ -62,6 +62,26 @@ public class ModItemGroups {
                         entries.add(ModItems.THALLIUM_HOE);
                         entries.add(ModItems.HAMMER);
 
+                        entries.add(ModItems.TERMINITE_HELMET);
+                        entries.add(ModItems.TERMINITE_CHESTPLATE);
+
+                        entries.add(ModItems.TERMINITE_LEGGINGS);
+                        entries.add(ModItems.TERMINITE_HORSE_ARMOR);
+                        entries.add(ModItems.THALLIUM_HORSE_ARMOR);
+
+                        entries.add(ModItems.TERMINITE_BOOTS);
+
+                        entries.add(ModItems.THALLIUM_HELMET);
+                        entries.add(ModItems.THALLIUM_CHESTPLATE);
+
+                        entries.add(ModItems.THALLIUM_LEGGINGS);
+
+                        entries.add(ModItems.THALLIUM_BOOTS);
+
+
+                        entries.add(ModItems.TRACK_SMITHING_TEMPLATE);
+
+
 
 
                         entries.add(ModBlocks.TERMINITE_SLAB);

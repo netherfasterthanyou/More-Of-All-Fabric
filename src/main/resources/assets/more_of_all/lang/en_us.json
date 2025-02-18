@@ -110,9 +110,10 @@
 
 
   "enchantment.more_of_all.thundering": "Call of Zeus",
-  "enchantment.more_of_all.tnt_explode_effect": "TNT Shot",
+  "enchantment.more_of_all.tnt_shot": "TNT Shot",
   "enchantment.more_of_all.life_steal": "Life Steal",
   "enchantment.more_of_all.fireball": "Fireball",
+  "enchantment.more_of_all.arrow_rain": "Arrow Rain",
 
 
   "item.minecraft.potion.effect.slimey_potion": "Sticky Potion",

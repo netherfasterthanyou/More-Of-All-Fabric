@@ -7,6 +7,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 
 import net.minecraft.data.client.*;
+import net.minecraft.item.ArmorItem;
 import net.minecraft.util.Identifier;
 
 public class ModModelProvider extends FabricModelProvider {
@@ -74,6 +75,13 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.RAW_TERMINITE, Models.GENERATED);
         itemModelGenerator.register(ModItems.THALLIUM, Models.GENERATED);
         itemModelGenerator.register(ModItems.CHISEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.TERMINITE_HORSE_ARMOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.THALLIUM_HORSE_ARMOR, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.TRACK_SMITHING_TEMPLATE, Models.GENERATED);
+
+
+
         itemModelGenerator.register(ModItems.BLACKSTONE_CHISEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.DEEPSLATECHISEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.NETHER_BRICK_CHISEL, Models.HANDHELD);
@@ -95,6 +103,19 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.THALLIUM_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.THALLIUM_HOE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.HAMMER, Models.HANDHELD);
+
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.TERMINITE_HELMET);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.TERMINITE_CHESTPLATE);
+
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.TERMINITE_LEGGINGS);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.TERMINITE_BOOTS);
+
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.THALLIUM_HELMET);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.THALLIUM_CHESTPLATE);
+
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.THALLIUM_LEGGINGS);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.THALLIUM_BOOTS);
+
 
     }
 }

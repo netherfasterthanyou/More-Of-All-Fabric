@@ -18,6 +18,34 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
+
+
+        getOrCreateTagBuilder(ItemTags.LEG_ARMOR_ENCHANTABLE)
+                .add(ModItems.TERMINITE_LEGGINGS   )
+                .add(ModItems.THALLIUM_LEGGINGS   );
+        getOrCreateTagBuilder(ItemTags.HEAD_ARMOR_ENCHANTABLE)
+                .add(ModItems.TERMINITE_HELMET   )
+                .add(ModItems.THALLIUM_HELMET   );
+
+        getOrCreateTagBuilder(ItemTags.CHEST_ARMOR_ENCHANTABLE)
+                .add(ModItems.TERMINITE_CHESTPLATE   )
+                .add(ModItems.THALLIUM_CHESTPLATE   );
+        getOrCreateTagBuilder(ItemTags.FOOT_ARMOR_ENCHANTABLE)
+                .add(ModItems.TERMINITE_BOOTS   )
+                .add(ModItems.THALLIUM_BOOTS   );
+
+
+
+        getOrCreateTagBuilder(ItemTags.DURABILITY_ENCHANTABLE)
+                .add(ModItems.TERMINITE_HELMET   )
+                .add(ModItems.TERMINITE_CHESTPLATE   )
+                .add(ModItems.TERMINITE_LEGGINGS   )
+                .add(ModItems.TERMINITE_BOOTS   )
+                .add(ModItems.THALLIUM_HELMET   )
+                .add(ModItems.THALLIUM_CHESTPLATE   )
+                .add(ModItems.THALLIUM_LEGGINGS   )
+                .add(ModItems.THALLIUM_BOOTS   );
+        
         getOrCreateTagBuilder(ItemTags.SWORDS)
                 .add( ModItems.THALLIUM_SWORD)
                 .add( ModItems.TERMINITE_SWORD);
@@ -53,6 +81,20 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add( ModItems.TERMINITE_AXE  )
                 .add( ModItems.TERMINITE_PICKAXE  )
                 .add( ModItems.TERMINITE_HOE  );
+
+        getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.TERMINITE_CHESTPLATE)
+
+                .add(ModItems.TERMINITE_BOOTS)
+                .add(ModItems.TERMINITE_LEGGINGS)
+
+                .add(ModItems.TERMINITE_HELMET)
+                .add(ModItems.THALLIUM_CHESTPLATE)
+
+                .add(ModItems.THALLIUM_BOOTS)
+                .add(ModItems.THALLIUM_LEGGINGS)
+
+                .add(ModItems.THALLIUM_HELMET);
 
         getOrCreateTagBuilder(ItemTags.SWORD_ENCHANTABLE)
                 .add( ModItems.TERMINITE_SWORD  )
@@ -90,6 +132,11 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add( ModItems.TERMINITE_HOE)
                 .add( ModItems.HAMMER  );
 
+        getOrCreateTagBuilder(ItemTags.TRIM_MATERIALS)
+                .add(ModItems.THALLIUM)
+                .add(ModItems.TERMINITE);
 
+        getOrCreateTagBuilder(ItemTags.TRIM_TEMPLATES)
+                .add(ModItems.TRACK_SMITHING_TEMPLATE);
     }
 }

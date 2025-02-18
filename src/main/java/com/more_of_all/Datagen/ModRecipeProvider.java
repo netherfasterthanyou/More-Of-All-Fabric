@@ -356,6 +356,114 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter);
 
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.THALLIUM_HELMET)
+                .pattern("XXX")
+                .pattern("X X")
+                .pattern("   ")
+                .input('X', ModItems.THALLIUM)
+
+
+                .criterion(hasItem(ModItems.THALLIUM), conditionsFromItem(ModItems.THALLIUM))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.THALLIUM_CHESTPLATE)
+                .pattern("X X")
+                .pattern("XXX")
+                .pattern("XXX")
+                .input('X', ModItems.THALLIUM)
+
+
+                .criterion(hasItem(ModItems.THALLIUM), conditionsFromItem(ModItems.THALLIUM))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.THALLIUM_LEGGINGS)
+                .pattern("XXX")
+                .pattern("X X")
+                .pattern("X X")
+                .input('X', ModItems.THALLIUM)
+
+
+                .criterion(hasItem(ModItems.THALLIUM), conditionsFromItem(ModItems.THALLIUM))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.THALLIUM_BOOTS)
+                .pattern("   ")
+                .pattern("X X")
+                .pattern("X X")
+                .input('X', ModItems.THALLIUM)
+
+
+                .criterion(hasItem(ModItems.THALLIUM), conditionsFromItem(ModItems.THALLIUM))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.TERMINITE_HELMET)
+                .pattern("XXX")
+                .pattern("X X")
+                .pattern("   ")
+                .input('X', ModItems.TERMINITE)
+
+
+                .criterion(hasItem(ModItems.TERMINITE), conditionsFromItem(ModItems.TERMINITE))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.TERMINITE_CHESTPLATE)
+                .pattern("X X")
+                .pattern("XXX")
+                .pattern("XXX")
+                .input('X', ModItems.TERMINITE)
+
+
+                .criterion(hasItem(ModItems.TERMINITE), conditionsFromItem(ModItems.TERMINITE))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.TERMINITE_LEGGINGS)
+                .pattern("XXX")
+                .pattern("X X")
+                .pattern("X X")
+                .input('X', ModItems.TERMINITE)
+
+
+                .criterion(hasItem(ModItems.TERMINITE), conditionsFromItem(ModItems.TERMINITE))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.TERMINITE_BOOTS)
+                .pattern("   ")
+                .pattern("X X")
+                .pattern("X X")
+                .input('X', ModItems.TERMINITE)
+
+
+                .criterion(hasItem(ModItems.TERMINITE), conditionsFromItem(ModItems.TERMINITE))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.THALLIUM_HORSE_ARMOR)
+                .pattern(" A ")
+                .pattern("ASA")
+                .pattern(" A ")
+                .input('A', ModItems.THALLIUM)
+                .input('S', Items.LEATHER_HORSE_ARMOR)
+                .criterion(hasItem(ModItems.THALLIUM), conditionsFromItem(ModItems.THALLIUM)).offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.TERMINITE_HORSE_ARMOR)
+                .pattern(" A ")
+                .pattern("ASA")
+                .pattern(" A ")
+                .input('A', ModItems.TERMINITE)
+                .input('S', Items.LEATHER_HORSE_ARMOR)
+                .criterion(hasItem(ModItems.TERMINITE), conditionsFromItem(ModItems.TERMINITE)).offerTo(exporter);
+
+
+        offerSmithingTrimRecipe(exporter, ModItems.TRACK_SMITHING_TEMPLATE, Identifier.of(MoreOfAll.MOD_ID, "track"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.TRACK_SMITHING_TEMPLATE)
+                .pattern("ASA")
+                .pattern("ATA")
+                .pattern("AAA")
+                .input('A', ModItems.THALLIUM)
+                .input('S', Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE)
+                .input('T', ModItems.TERMINITE)
+                .criterion(hasItem(ModItems.TERMINITE), conditionsFromItem(ModItems.TERMINITE)).offerTo(exporter);
+
 
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.THALLIUM, 9)
