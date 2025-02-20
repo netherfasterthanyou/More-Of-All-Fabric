@@ -4,6 +4,8 @@ import com.more_of_all.Datagen.*;
 import com.more_of_all.enchantment.ModEnchantments;
 import com.more_of_all.trim.ModTrimMaterial;
 import com.more_of_all.trim.ModTrimPatterns;
+import com.more_of_all.worldgen.ModConfiguredFeatures;
+import com.more_of_all.worldgen.ModPlacedFeatures;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 
@@ -29,5 +31,8 @@ public class MoreOfAllDataGenerator implements DataGeneratorEntrypoint {
 		registryBuilder.addRegistry(RegistryKeys.TRIM_PATTERN, ModTrimPatterns::bootstrap);
 		registryBuilder.addRegistry(RegistryKeys.TRIM_MATERIAL, ModTrimMaterial::bootstrap);
 		registryBuilder.addRegistry(RegistryKeys.ENCHANTMENT, ModEnchantments::bootstrap);
+
+		registryBuilder.addRegistry(RegistryKeys.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap);
+		registryBuilder.addRegistry(RegistryKeys.PLACED_FEATURE, ModPlacedFeatures::bootstrap);
 	}
 }

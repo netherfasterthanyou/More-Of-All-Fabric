@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_left",
+  "textures": {
+    "bottom": "more_of_all:block/bloodwood_door_bottom",
+    "top": "more_of_all:block/bloodwood_door_top"
+  }
+}

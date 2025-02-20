@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "more_of_all:block/chili_crop_stage3"
+  }
+}

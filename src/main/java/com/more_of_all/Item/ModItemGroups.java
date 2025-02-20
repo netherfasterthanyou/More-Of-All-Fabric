@@ -79,10 +79,77 @@ public class ModItemGroups {
                         entries.add(ModItems.THALLIUM_BOOTS);
 
 
+                        entries.add(ModBlocks.DRIFTWOOD_PLANKS);
+                        entries.add(ModBlocks.DRIFTWOOD_LEAVES);
+
+                        entries.add(ModBlocks.DRIFTWOOD_SAPLING);
+
+                        entries.add(ModBlocks.DRIFTWOOD_LOG);
+                        entries.add(ModBlocks.STRIPPED_DRIFTWOOD_WOOD);
+                        entries.add(ModBlocks.DRIFTWOOD_WOOD);
+                        entries.add(ModBlocks.STRIPPED_DRIFTWOOD_LOG);
+
+
+                        entries.add(ModBlocks.BLOODWOOD_PLANKS);
+                        entries.add(ModBlocks.BLOODWOOD_LEAVES);
+
+                        entries.add(ModBlocks.BLOODWOOD_SAPLING);
+
+                        entries.add(ModBlocks.BLOODWOOD_LOG);
+                        entries.add(ModBlocks.STRIPPED_BLOODWOOD_WOOD);
+                        entries.add(ModBlocks.BLOODWOOD_WOOD);
+                        entries.add(ModBlocks.STRIPPED_BLOODWOOD_LOG);
+
+                        entries.add(ModBlocks.BLOODWOOD_STAIRS);
+                        entries.add(ModBlocks.BLOODWOOD_SLAB);
+                        entries.add(ModBlocks.BLOODWOOD_BUTTON);
+                        entries.add(ModBlocks.BLOODWOOD_PRESSURE_PLATE);
+                        entries.add(ModBlocks.BLOODWOOD_FENCE);
+                        entries.add(ModBlocks.BLOODWOOD_WALL);
+                        entries.add(ModBlocks.BLOODWOOD_FENCE_GATE);
+                        entries.add(ModBlocks.BLOODWOOD_TRAPDOOR);
+                        entries.add(ModBlocks.BLOODWOOD_DOOR);
+
+
+                        entries.add(ModBlocks.EUCALYPTUS_STAIRS);
+                        entries.add(ModBlocks.EUCALYPTUS_SLAB);
+                        entries.add(ModBlocks.EUCALYPTUS_BUTTON);
+                        entries.add(ModBlocks.EUCALYPTUS_PRESSURE_PLATE);
+                        entries.add(ModBlocks.EUCALYPTUS_FENCE);
+                        entries.add(ModBlocks.EUCALYPTUS_WALL);
+                        entries.add(ModBlocks.EUCALYPTUS_FENCE_GATE);
+                        entries.add(ModBlocks.EUCALYPTUS_TRAPDOOR);
+                        entries.add(ModBlocks.EUCALYPTUS_DOOR);
+
+
+                        entries.add(ModBlocks.DRIFTWOOD_STAIRS);
+                        entries.add(ModBlocks.DRIFTWOOD_SLAB);
+                        entries.add(ModBlocks.DRIFTWOOD_BUTTON);
+                        entries.add(ModBlocks.DRIFTWOOD_PRESSURE_PLATE);
+                        entries.add(ModBlocks.DRIFTWOOD_FENCE);
+                        entries.add(ModBlocks.DRIFTWOOD_WALL);
+                        entries.add(ModBlocks.DRIFTWOOD_FENCE_GATE);
+                        entries.add(ModBlocks.DRIFTWOOD_TRAPDOOR);
+                        entries.add(ModBlocks.DRIFTWOOD_DOOR);
+
+
+
+                        entries.add(ModBlocks.EUCALYPTUS_PLANKS);
+                        entries.add(ModBlocks.EUCALYPTUS_LEAVES);
+
+                        entries.add(ModBlocks.EUCALYPTUS_SAPLING);
+
+                        entries.add(ModBlocks.EUCALYPTUS_LOG);
+                        entries.add(ModBlocks.STRIPPED_EUCALYPTUS_WOOD);
+                        entries.add(ModBlocks.EUCALYPTUS_WOOD);
+                        entries.add(ModBlocks.STRIPPED_EUCALYPTUS_LOG);
+
+
                         entries.add(ModItems.TRACK_SMITHING_TEMPLATE);
 
+                        entries.add(ModItems.BLUEBERRIES);
 
-
+                        entries.add(ModItems.CHILI_SEEDS);
 
                         entries.add(ModBlocks.TERMINITE_SLAB);
                         entries.add(ModBlocks.TERMINITE_STAIRS);

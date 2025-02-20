@@ -1,6 +1,8 @@
-// 1.21.1	2025-02-18T11:23:17.0964521	More Of All/Tags for minecraft:block
-5b2c27413b53d1bcb5dcd91bfc8b2b7dc7d3e204 data\minecraft\tags\block\fence_gates.json
+// 1.21.1	2025-02-19T16:48:36.9972045	More Of All/Tags for minecraft:block
+23d5999d40397e22ee2885bf7ef083193a6a2d0d data\minecraft\tags\block\fence_gates.json
 dd3866c80bfb30ca5b9a78d92fcc47a5c54ceaad data\minecraft\tags\block\needs_stone_tool.json
-14c090ed00d25d3cf76fe1f0bde92be8ca7e1d7a data\minecraft\tags\block\walls.json
+507ee0e0b01ae2a40f16918c60cd926669f3308c data\minecraft\tags\block\walls.json
 cde2f27ccbfe18dab2e49af09f4d1ac59a54dd66 data\minecraft\tags\block\mineable\pickaxe.json
 be598b0a5dd89c09a464311136fcf5d48a3e824b data\minecraft\tags\block\fences.json
+8a59d4f6f89b13a18d804029ff595fcff84b614d data\minecraft\tags\block\planks.json
+c4ac04bf26c6932dc40c3e194a654e9cc00a6b75 data\minecraft\tags\block\logs_that_burn.json

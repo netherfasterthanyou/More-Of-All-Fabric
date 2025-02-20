@@ -185,6 +185,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.TERMINITE), conditionsFromItem(ModItems.TERMINITE)).offerTo(exporter);
         createTrapdoorRecipe(ModBlocks.TERMINITE_TRAPDOOR, Ingredient.ofItems(ModItems.TERMINITE))
                 .criterion(hasItem(ModItems.TERMINITE), conditionsFromItem(ModItems.TERMINITE)).offerTo(exporter);
+        offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.TERMINITE_WALL, ModItems.TERMINITE);
 
         createStairsRecipe(ModBlocks.THALLIUM_STAIRS, Ingredient.ofItems(ModItems.THALLIUM))
                 .criterion(hasItem(ModItems.THALLIUM), conditionsFromItem(ModItems.THALLIUM)).offerTo(exporter);
@@ -204,7 +205,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.THALLIUM), conditionsFromItem(ModItems.THALLIUM)).offerTo(exporter);
 
         offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.THALLIUM_WALL, ModItems.THALLIUM);
-        offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.TERMINITE_WALL, ModItems.TERMINITE);
+
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.TERMINITE_BUTTON)
                 .pattern("   ")
@@ -466,11 +467,186 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
 
 
+
+
+        createStairsRecipe(ModBlocks.BLOODWOOD_STAIRS, Ingredient.ofItems(ModBlocks.BLOODWOOD_PLANKS))
+                .criterion(hasItem(ModBlocks.BLOODWOOD_PLANKS), conditionsFromItem(ModBlocks.BLOODWOOD_PLANKS)).offerTo(exporter);
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLOODWOOD_SLAB, Ingredient.ofItems(ModBlocks.BLOODWOOD_PLANKS))
+                .criterion(hasItem(ModBlocks.BLOODWOOD_PLANKS), conditionsFromItem(ModBlocks.BLOODWOOD_PLANKS)).offerTo(exporter);
+        createPressurePlateRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLOODWOOD_PRESSURE_PLATE,
+                Ingredient.ofItems(ModBlocks.BLOODWOOD_PLANKS))
+                .criterion(hasItem(ModBlocks.BLOODWOOD_PLANKS), conditionsFromItem(ModBlocks.BLOODWOOD_PLANKS)).offerTo(exporter);
+        createFenceRecipe(ModBlocks.BLOODWOOD_FENCE, Ingredient.ofItems(ModBlocks.BLOODWOOD_PLANKS))
+                .criterion(hasItem(ModBlocks.BLOODWOOD_PLANKS), conditionsFromItem(ModBlocks.BLOODWOOD_PLANKS)).offerTo(exporter);
+        createFenceGateRecipe(ModBlocks.BLOODWOOD_FENCE_GATE, Ingredient.ofItems(ModBlocks.BLOODWOOD_PLANKS))
+                .criterion(hasItem(ModBlocks.BLOODWOOD_PLANKS), conditionsFromItem(ModBlocks.BLOODWOOD_PLANKS)).offerTo(exporter);
+
+        createDoorRecipe(ModBlocks.BLOODWOOD_DOOR, Ingredient.ofItems(ModBlocks.BLOODWOOD_PLANKS))
+                .criterion(hasItem(ModBlocks.BLOODWOOD_PLANKS), conditionsFromItem(ModBlocks.BLOODWOOD_PLANKS)).offerTo(exporter);
+        createTrapdoorRecipe(ModBlocks.BLOODWOOD_TRAPDOOR, Ingredient.ofItems(ModBlocks.BLOODWOOD_PLANKS))
+                .criterion(hasItem(ModBlocks.BLOODWOOD_PLANKS), conditionsFromItem(ModBlocks.BLOODWOOD_PLANKS)).offerTo(exporter);
+
+        offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLOODWOOD_WALL, ModBlocks.BLOODWOOD_PLANKS);
+
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLOODWOOD_BUTTON)
+                .pattern("   ")
+                .pattern(" X ")
+                .pattern("   ")
+                .input('X', ModBlocks.BLOODWOOD_PLANKS)
+
+                .criterion(hasItem(ModBlocks.BLOODWOOD_PLANKS), conditionsFromItem(ModBlocks.BLOODWOOD_PLANKS))
+                .offerTo(exporter);
+
+
+
+        createStairsRecipe(ModBlocks.DRIFTWOOD_STAIRS, Ingredient.ofItems(ModBlocks.DRIFTWOOD_PLANKS))
+                .criterion(hasItem(ModBlocks.DRIFTWOOD_PLANKS), conditionsFromItem(ModBlocks.DRIFTWOOD_PLANKS)).offerTo(exporter);
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DRIFTWOOD_SLAB, Ingredient.ofItems(ModBlocks.DRIFTWOOD_PLANKS))
+                .criterion(hasItem(ModBlocks.DRIFTWOOD_PLANKS), conditionsFromItem(ModBlocks.DRIFTWOOD_PLANKS)).offerTo(exporter);
+        createPressurePlateRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DRIFTWOOD_PRESSURE_PLATE,
+                Ingredient.ofItems(ModBlocks.DRIFTWOOD_PLANKS))
+                .criterion(hasItem(ModBlocks.DRIFTWOOD_PLANKS), conditionsFromItem(ModBlocks.DRIFTWOOD_PLANKS)).offerTo(exporter);
+        createFenceRecipe(ModBlocks.DRIFTWOOD_FENCE, Ingredient.ofItems(ModBlocks.DRIFTWOOD_PLANKS))
+                .criterion(hasItem(ModBlocks.DRIFTWOOD_PLANKS), conditionsFromItem(ModBlocks.DRIFTWOOD_PLANKS)).offerTo(exporter);
+        createFenceGateRecipe(ModBlocks.DRIFTWOOD_FENCE_GATE, Ingredient.ofItems(ModBlocks.DRIFTWOOD_PLANKS))
+                .criterion(hasItem(ModBlocks.DRIFTWOOD_PLANKS), conditionsFromItem(ModBlocks.DRIFTWOOD_PLANKS)).offerTo(exporter);
+
+        createDoorRecipe(ModBlocks.DRIFTWOOD_DOOR, Ingredient.ofItems(ModBlocks.DRIFTWOOD_PLANKS))
+                .criterion(hasItem(ModBlocks.DRIFTWOOD_PLANKS), conditionsFromItem(ModBlocks.DRIFTWOOD_PLANKS)).offerTo(exporter);
+        createTrapdoorRecipe(ModBlocks.DRIFTWOOD_TRAPDOOR, Ingredient.ofItems(ModBlocks.DRIFTWOOD_PLANKS))
+                .criterion(hasItem(ModBlocks.DRIFTWOOD_PLANKS), conditionsFromItem(ModBlocks.DRIFTWOOD_PLANKS)).offerTo(exporter);
+
+        offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DRIFTWOOD_WALL, ModBlocks.DRIFTWOOD_PLANKS);
+
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DRIFTWOOD_BUTTON)
+                .pattern("   ")
+                .pattern(" X ")
+                .pattern("   ")
+                .input('X', ModBlocks.DRIFTWOOD_PLANKS)
+
+                .criterion(hasItem(ModBlocks.DRIFTWOOD_PLANKS), conditionsFromItem(ModBlocks.DRIFTWOOD_PLANKS))
+                .offerTo(exporter);
+
+
+
+
+        createStairsRecipe(ModBlocks.EUCALYPTUS_STAIRS, Ingredient.ofItems(ModBlocks.EUCALYPTUS_PLANKS))
+                .criterion(hasItem(ModBlocks.EUCALYPTUS_PLANKS), conditionsFromItem(ModBlocks.EUCALYPTUS_PLANKS)).offerTo(exporter);
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.EUCALYPTUS_SLAB, Ingredient.ofItems(ModBlocks.EUCALYPTUS_PLANKS))
+                .criterion(hasItem(ModBlocks.EUCALYPTUS_PLANKS), conditionsFromItem(ModBlocks.EUCALYPTUS_PLANKS)).offerTo(exporter);
+        createPressurePlateRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.EUCALYPTUS_PRESSURE_PLATE,
+                Ingredient.ofItems(ModBlocks.EUCALYPTUS_PLANKS))
+                .criterion(hasItem(ModBlocks.EUCALYPTUS_PLANKS), conditionsFromItem(ModBlocks.EUCALYPTUS_PLANKS)).offerTo(exporter);
+        createFenceRecipe(ModBlocks.EUCALYPTUS_FENCE, Ingredient.ofItems(ModBlocks.EUCALYPTUS_PLANKS))
+                .criterion(hasItem(ModBlocks.EUCALYPTUS_PLANKS), conditionsFromItem(ModBlocks.EUCALYPTUS_PLANKS)).offerTo(exporter);
+        createFenceGateRecipe(ModBlocks.EUCALYPTUS_FENCE_GATE, Ingredient.ofItems(ModBlocks.EUCALYPTUS_PLANKS))
+                .criterion(hasItem(ModBlocks.EUCALYPTUS_PLANKS), conditionsFromItem(ModBlocks.EUCALYPTUS_PLANKS)).offerTo(exporter);
+
+        createDoorRecipe(ModBlocks.EUCALYPTUS_DOOR, Ingredient.ofItems(ModBlocks.EUCALYPTUS_PLANKS))
+                .criterion(hasItem(ModBlocks.EUCALYPTUS_PLANKS), conditionsFromItem(ModBlocks.EUCALYPTUS_PLANKS)).offerTo(exporter);
+        createTrapdoorRecipe(ModBlocks.EUCALYPTUS_TRAPDOOR, Ingredient.ofItems(ModBlocks.EUCALYPTUS_PLANKS))
+                .criterion(hasItem(ModBlocks.EUCALYPTUS_PLANKS), conditionsFromItem(ModBlocks.EUCALYPTUS_PLANKS)).offerTo(exporter);
+
+        offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.EUCALYPTUS_WALL, ModBlocks.EUCALYPTUS_PLANKS);
+
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.EUCALYPTUS_BUTTON)
+                .pattern("   ")
+                .pattern(" X ")
+                .pattern("   ")
+                .input('X', ModBlocks.EUCALYPTUS_PLANKS)
+
+                .criterion(hasItem(ModBlocks.EUCALYPTUS_PLANKS), conditionsFromItem(ModBlocks.EUCALYPTUS_PLANKS))
+                .offerTo(exporter);
+
+
+
+
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.THALLIUM, 9)
                 .input(ModBlocks.THALLIUM_BLOCK)
                 .criterion(hasItem(ModBlocks.THALLIUM_BLOCK),
                         conditionsFromItem(ModBlocks.THALLIUM_BLOCK))
                 .offerTo(exporter);
+
+
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLOODWOOD_PLANKS, 4)
+                .input(ModBlocks.BLOODWOOD_LOG)
+                .criterion(hasItem(ModBlocks.BLOODWOOD_LOG),
+                        conditionsFromItem(ModBlocks.BLOODWOOD_LOG))
+                .offerTo(exporter, "d");
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLOODWOOD_PLANKS, 4)
+                .input(ModBlocks.STRIPPED_BLOODWOOD_LOG)
+                .criterion(hasItem(ModBlocks.STRIPPED_BLOODWOOD_LOG),
+                        conditionsFromItem(ModBlocks.STRIPPED_BLOODWOOD_LOG))
+                .offerTo(exporter, "a");
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLOODWOOD_PLANKS, 4)
+                .input(ModBlocks.BLOODWOOD_WOOD)
+                .criterion(hasItem(ModBlocks.BLOODWOOD_WOOD),
+                        conditionsFromItem(ModBlocks.BLOODWOOD_WOOD))
+                .offerTo(exporter, "b");
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLOODWOOD_PLANKS, 4)
+                .input(ModBlocks.STRIPPED_BLOODWOOD_WOOD)
+                .criterion(hasItem(ModBlocks.STRIPPED_BLOODWOOD_WOOD),
+                        conditionsFromItem(ModBlocks.STRIPPED_BLOODWOOD_WOOD))
+                .offerTo(exporter, "c");
+
+
+
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DRIFTWOOD_PLANKS, 4)
+                .input(ModBlocks.DRIFTWOOD_LOG)
+                .criterion(hasItem(ModBlocks.DRIFTWOOD_LOG),
+                        conditionsFromItem(ModBlocks.DRIFTWOOD_LOG))
+                .offerTo(exporter, "e");
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DRIFTWOOD_PLANKS, 4)
+                .input(ModBlocks.STRIPPED_DRIFTWOOD_LOG)
+                .criterion(hasItem(ModBlocks.STRIPPED_DRIFTWOOD_LOG),
+                        conditionsFromItem(ModBlocks.STRIPPED_DRIFTWOOD_LOG))
+                .offerTo(exporter, "f");
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DRIFTWOOD_PLANKS, 4)
+                .input(ModBlocks.DRIFTWOOD_WOOD)
+                .criterion(hasItem(ModBlocks.DRIFTWOOD_WOOD),
+                        conditionsFromItem(ModBlocks.DRIFTWOOD_WOOD))
+                .offerTo(exporter, "g");
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DRIFTWOOD_PLANKS, 4)
+                .input(ModBlocks.STRIPPED_DRIFTWOOD_WOOD)
+                .criterion(hasItem(ModBlocks.STRIPPED_DRIFTWOOD_WOOD),
+                        conditionsFromItem(ModBlocks.STRIPPED_DRIFTWOOD_WOOD))
+                .offerTo(exporter, "h");
+
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.EUCALYPTUS_PLANKS, 4)
+                .input(ModBlocks.EUCALYPTUS_LOG)
+                .criterion(hasItem(ModBlocks.EUCALYPTUS_LOG),
+                        conditionsFromItem(ModBlocks.EUCALYPTUS_LOG))
+                .offerTo(exporter, "i");
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.EUCALYPTUS_PLANKS, 4)
+                .input(ModBlocks.STRIPPED_EUCALYPTUS_LOG)
+                .criterion(hasItem(ModBlocks.STRIPPED_EUCALYPTUS_LOG),
+                        conditionsFromItem(ModBlocks.STRIPPED_EUCALYPTUS_LOG))
+                .offerTo(exporter, "j");
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.EUCALYPTUS_PLANKS, 4)
+                .input(ModBlocks.EUCALYPTUS_WOOD)
+                .criterion(hasItem(ModBlocks.EUCALYPTUS_WOOD),
+                        conditionsFromItem(ModBlocks.EUCALYPTUS_WOOD))
+                .offerTo(exporter, "k");
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.EUCALYPTUS_PLANKS, 4)
+                .input(ModBlocks.STRIPPED_EUCALYPTUS_WOOD)
+                .criterion(hasItem(ModBlocks.STRIPPED_EUCALYPTUS_WOOD),
+                        conditionsFromItem(ModBlocks.STRIPPED_EUCALYPTUS_WOOD))
+                .offerTo(exporter, "l");
 
 
     }

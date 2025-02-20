@@ -1,5 +1,6 @@
 package com.more_of_all.Item;
 
+import com.more_of_all.Block.ModBlocks;
 import com.more_of_all.Item.Custom.ChainsawItem;
 import com.more_of_all.Item.Custom.Chisel.*;
 import com.more_of_all.Item.Custom.HammerItem;
@@ -111,6 +112,12 @@ public class ModItems {
 
     public static final Item TRACK_SMITHING_TEMPLATE = registerItem("track_armor_trim_smithing_template",
             SmithingTemplateItem.of(Identifier.of(MoreOfAll.MOD_ID, "track"), FeatureFlags.VANILLA));
+
+    public static final Item CHILI_SEEDS = registerItem("chili_seeds",
+            new AliasedBlockItem(ModBlocks.CHILI_CROP, new Item.Settings()));
+
+    public static final Item BLUEBERRIES = registerItem("blueberrys",
+            new AliasedBlockItem(ModBlocks.BLUEBERRY_BUSH, new Item.Settings().food(ModFood.BLUEBERRIES)));
 
     private static Item registerItem(String name, Item item){
 

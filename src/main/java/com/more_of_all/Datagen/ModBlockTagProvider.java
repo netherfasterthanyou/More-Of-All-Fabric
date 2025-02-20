@@ -50,10 +50,36 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.FENCE_GATES)
                 .add(ModBlocks.TERMINITE_FENCE_GATE)
+                .add(ModBlocks.BLOODWOOD_FENCE_GATE)
+                .add(ModBlocks.DRIFTWOOD_FENCE_GATE)
+                .add(ModBlocks.EUCALYPTUS_FENCE_GATE)
                 .add(ModBlocks.THALLIUM_FENCE_GATE);
 
         getOrCreateTagBuilder(BlockTags.WALLS)
                 .add(ModBlocks.TERMINITE_WALL)
+                .add(ModBlocks.BLOODWOOD_WALL)
+                .add(ModBlocks.DRIFTWOOD_WALL)
+                .add(ModBlocks.EUCALYPTUS_WALL)
                 .add(ModBlocks.THALLIUM_WALL);
+
+
+        getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)
+                .add(ModBlocks.EUCALYPTUS_LOG)
+                .add(ModBlocks.EUCALYPTUS_WOOD)
+                .add(ModBlocks.STRIPPED_EUCALYPTUS_WOOD)
+                .add(ModBlocks.STRIPPED_EUCALYPTUS_LOG)
+                .add(ModBlocks.DRIFTWOOD_LOG)
+                .add(ModBlocks.DRIFTWOOD_WOOD)
+                .add(ModBlocks.STRIPPED_DRIFTWOOD_WOOD)
+                .add(ModBlocks.STRIPPED_DRIFTWOOD_LOG)
+                .add(ModBlocks.BLOODWOOD_LOG)
+                .add(ModBlocks.BLOODWOOD_WOOD)
+                .add(ModBlocks.STRIPPED_BLOODWOOD_WOOD)
+                .add(ModBlocks.STRIPPED_BLOODWOOD_LOG);
+
+        getOrCreateTagBuilder(BlockTags.PLANKS)
+                .add(ModBlocks.EUCALYPTUS_PLANKS)
+                .add(ModBlocks.BLOODWOOD_PLANKS)
+                .add(ModBlocks.DRIFTWOOD_PLANKS);
     }
 }

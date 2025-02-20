@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "X": {
+      "item": "more_of_all:bloodwood_planks"
+    }
+  },
+  "pattern": [
+    "   ",
+    " X ",
+    "   "
+  ],
+  "result": {
+    "count": 1,
+    "id": "more_of_all:bloodwood_button"
+  }
+}
